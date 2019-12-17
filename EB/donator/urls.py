@@ -5,5 +5,5 @@ from . import views
 app_name = 'donator'
 
 urlpatterns=[
-    url(r'^addDonator',views.addDonator , name='addDonator')
+    url(r'^addDonator',views.donatorForm , name='addDonator')
 ]

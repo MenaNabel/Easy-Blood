@@ -5,7 +5,7 @@ from .forms import forms
 # Create your views here.
 
 
-def donatorForm(request):
+def addDonator(request):
     if request.method == 'POST':
         form = donatorForm(request.POST)
         if form.is_valid():

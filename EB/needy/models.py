@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class needy(models.Model):
@@ -11,7 +12,7 @@ class needy(models.Model):
     donation_type = models.CharField(max_length=20)
     phone = models.CharField(max_length=11)
     created = models.DateTimeField(default=timezone.now)
-    desciption = models.TextField(max_length=1000 , default='')
+    desciption = RichTextField()
 
 
     def __str__(self):

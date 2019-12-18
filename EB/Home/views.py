@@ -3,11 +3,12 @@ from needy.models import needy
 # Create your views here.
 
 def index(requst):
+    allNeedies = needy.objects.all()
     context = {
-        'index' : index ,
+        'allNeedies': allNeedies,
     }
-    return render(requst , 'index.html' , context)
-
+    # Your View Body and Actions
+    return render(requst , 'index.html', context)
 def all_needy(request):
     all_needy = needy.objects.all()
     context = {

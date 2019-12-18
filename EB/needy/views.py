@@ -16,7 +16,14 @@ def addNeedy(request):
     context = {
         'form' : form ,
     }
-
-
     return  render(request, 'addNeedy.html' , context)
 
+
+
+def allNeedies(request):
+    allNeedies = needy.objects.all()
+    context = {
+        'allNeedies': allNeedies,
+    }
+    # Your View Body and Actions
+    return redirect('index.html', context)

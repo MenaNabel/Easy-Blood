@@ -7199,7 +7199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* */
 .register{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left);
     margin-top: 3%;
     padding: 3%;
 }

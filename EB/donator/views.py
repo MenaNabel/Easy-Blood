@@ -9,6 +9,8 @@ def addDonator(request):
     if request.method == 'POST':
         form = donatorForm(request.POST)
         if form.is_valid():
+            new_form = form.save(commit=False)
+            new_form.user = request.user
             form.save()
     else :
         form = donatorForm()

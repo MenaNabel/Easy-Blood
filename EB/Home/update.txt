@@ -1,0 +1,15 @@
+{% for needy in allNeedies %}
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_service_text">
+                                    <i class="fas fa-home"></i>{{needy.city}}
+                                    <ul>
+                                        <li><i class="fas fa-heartbeat fa-2x"></i>{{needy.name}}</li>
+                                        <li><i class="fas fa-burn"></i>{{needy.blood_Type}}</li>
+                                        <li><i class="fas fa-hospital"></i>{{needy.hospital}}</li>
+                                    </ul>
+                                    <p>{{needy.desciption}}</p>
+                                    <a href="#">تواصل الان</a>
+                                </div>
+                            </div>
+
+                            {% endfor %}

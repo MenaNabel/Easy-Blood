@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('Home.urls', namespace='home')),
     path('', include('needy.urls', namespace='needy')),
     path('', include('donator.urls', namespace='donator')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 

@@ -10,11 +10,11 @@ class donator(models.Model) :
     phone = models.CharField(max_length=11)
     password = models.CharField(max_length=250)
     bloodType = models.CharField(max_length=3)
-    dateOfLastDanation = models.DateField(default= timezone.datetime)
+    #dateOfLastDanation = models.DateField(default= timezone.datetime)
     age = models.IntegerField()
     weight = models.IntegerField()
     city = models.CharField(max_length=50)
     gender = models.CharField(max_length=10)
 
-    def _str_(self):
+    def __str__(self):
         return self.firstName
